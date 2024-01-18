@@ -28,9 +28,10 @@
         var tn = getParameterByName('tn');
 
         // Construct the UPI deeplink URL
-        var upiUrl = 'upi://pay?pa=' + encodeURIComponent(pa) + '&pn=' + encodeURIComponent(pn) + '&tn=' + encodeURIComponent(tn) + '&am=' + encodeURIComponent(am) + '&cu=INR';
+        var upiUrl = 'upi://pay?pa=' + encodeURIComponent(pa) + '&pn=' + encodeURIComponent(pn) + '&mc=BCR2DN4TWTN7DVTD&tr=18012024-0' + '&tn=' + encodeURIComponent(tn) + '&am=' + encodeURIComponent(am) + '&cu=INR';
 
         // Redirect to the constructed UPI deeplink URL
+        console.log(upiUrl);
         window.location.href = upiUrl;
     }
 
