@@ -28,7 +28,7 @@
         var tn = getParameterByName('tn');
 
         // Construct the UPI deeplink URL
-        var upiUrl = 'upi://pay?pa=' + encodeURIComponent(pa) + '&pn=' + encodeURIComponent(pn) + '&mc=123456&tid=123456789&tr=12345678&tn=' + encodeURIComponent(tn) + '&am=' + encodeURIComponent(am) + '&cu=INR';
+        var upiUrl = 'upi://pay?pa=' + encodeURIComponent(pa) + '&pn=' + encodeURIComponent(pn) + '&tn=' + encodeURIComponent(tn) + '&am=' + encodeURIComponent(am) + '&cu=INR';
 
         // Redirect to the constructed UPI deeplink URL
         window.location.href = upiUrl;
